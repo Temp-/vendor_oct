@@ -79,18 +79,12 @@ PRODUCT_COPY_FILES += \
 
 # OctOS Packages   
 PRODUCT_PACKAGES += \
-    AndroidKernelTweaker \
-    FileManager \
-    HallMonitor \
+    CMFileManager \
     LatinIME \
     Launcher3 \
     OctOSAbout \
-    OctSun \
     OctOTA \
-    OctPhase \
-    OctPapers \
     OmniSwitch \
-    StockWhite \
     Torch 
     
 # Screen recorder
@@ -113,11 +107,11 @@ include vendor/oct/config/themes_common.mk
 PRODUCT_PACKAGE_OVERLAYS += vendor/oct/overlay/common
 
 # Supersu
-PRODUCT_COPY_FILES += \
-    vendor/oct/prebuilt/common/bin/su:system/xbin/daemonsu \
-    vendor/oct/prebuilt/common/bin/su:system/xbin/su \
-    vendor/oct/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/oct/prebuilt/common/apk/Superuser.apk:system/app/Superuser.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/oct/prebuilt/common/bin/su:system/xbin/daemonsu \
+#    vendor/oct/prebuilt/common/bin/su:system/xbin/su \
+#    vendor/oct/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+#    vendor/oct/prebuilt/common/apk/Superuser.apk:system/app/Superuser.apk
 
 # init.d support
 PRODUCT_COPY_FILES += \
